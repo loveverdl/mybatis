@@ -1,0 +1,7 @@
+<configuration>
+	<mappers>
+		<mapper resource="test/xml/KindMapper.xml" />
+		<mapper resource="test/xml/PictureMapper.xml" />
+		<mapper resource="test/xml/PictureSetMapper.xml" />
+	</mappers>
+</configuration>
