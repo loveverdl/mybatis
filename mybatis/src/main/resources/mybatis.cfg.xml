@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+  
+<!DOCTYPE configuration PUBLIC   
+    "-//mybatis.org//DTD Config 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- <plugins> <plugin interceptor="test.interceptor.PaginationInterceptor"> 
+		<property name="dialectClass" value="test.dialect.MySQLDialect" /> <property 
+		name="sqlPattern" value=".*selectByExample.*" /> </plugin> </plugins> -->
+	<plugins><!-- 指定数据库分页方言Dialect, 其它方言:OracleDialect,SQLServerDialect,SybaseDialect,DB2Dialect,PostgreSQLDialect,MySQLDialect,DerbyDialect -->
+		<plugin interceptor="test.my.interceptor.PageInterceptor">
+			<property name="dialectClass" value="test.my.interceptor.MySQLDialect" />
+		</plugin>
+	</plugins>
+	<mappers>
+		<mapper resource="test/xml/KindMapper.xml" />
+	</mappers>
+</configuration>  

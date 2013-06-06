@@ -26,7 +26,7 @@ public class Test {
 		kk.setKind_name("asd");
 		km.insert(kk);
 		PictureSetMapper psm = sqlSession.getMapper(PictureSetMapper.class);
-		PictureSetDetail psd=psm.getDetail(31);
+		PictureSetDetail psd=psm.getDetail(33);
 		System.out.println(psd.getList().toString());
 		sqlSession.commit();
 		Kind k = km.selectByPrimaryKey(10001);
