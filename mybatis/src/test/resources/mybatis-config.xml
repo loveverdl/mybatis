@@ -17,8 +17,4 @@
 		<property name="dataSource" ref="dataSourceMgr" />
 		<property name="mapperLocations" value="classpath*:test/xml/*.xml" />
 	</bean>
-	<bean id="kindMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="test.dao.KindMapper" />
-		<property name="sqlSessionFactory" ref="sqlSessionFactoryMgr" />
-	</bean>
 </beans>
